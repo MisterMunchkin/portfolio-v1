@@ -2,6 +2,10 @@ p {
   color: white;
 }
 
+#hero-text {
+  padding-top: 15%;
+}
+
 .header-title {
   color: #f50057;
 }
