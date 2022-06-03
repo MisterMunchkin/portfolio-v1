@@ -1,12 +1,30 @@
 
 .swiper-container-wrapper--timeline .swiper-slide {
     display: flex;
-    background: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+    /* background: #fff; */
+    background: #000;
     min-height: 300px;
-    align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     border-radius: 10px;
 }
+
+.swiper-slide p {
+    /* color: #00e5ff; */
+    color: rgb(159, 159, 159);
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.swiper-slide h6 {
+    color: rgb(190, 190, 190);
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
 .swiper-container-wrapper--timeline .swiper-slide .swiper-container {
     padding: 0;
     width: 100%;
