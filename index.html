@@ -15,6 +15,8 @@
 
     <!--vendors styles-->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -22,6 +24,7 @@
     <!-- Bootstrap CSS / Color Scheme -->
     <link rel="stylesheet" href="css/pink.css" id="theme-color">
     <link rel="stylesheet" href="css/mycss.css">
+    <link rel="stylesheet" href="css/timeline.css">
 </head>
 <div>
 <!--navigation-->
@@ -67,25 +70,26 @@
     <section class="py-7 py-md-0" id="home">
         <div class="container">
             <div class="row vh-md-100">
-                <div class="col-md-8 col-sm-10 col-12 mx-auto my-auto text-center">
+                <div class="first-thing col-12 mx-auto my-auto text-center">
                     <h1 id="hero-text">
                         Hi 👋🏽, I'm <span style="color: #f50057;">Robin</span> <br />
-                        A Full Stack Developer who likes building things on Web and Mobile.
+                        A Full Stack Developer who loves building things on Web and Mobile.
                     </h1>
 
-                    <h5>Already sold? Contact me through these channels.</h5>
                     <div>
-                        <button onclick="redirectToSocials('https://twitter.com/RobinDalmy')" class="social-button btn-primary">
-                            <i class="fa fa-twitter"></i>
-                        </button>
-                        <button style="margin-left: 20px;margin-right: 20px;" onclick="redirectToSocials('https://www.linkedin.com/in/robin-dalmy1997')" class="social-button btn-primary">
-                            <i class="fa fa-linkedin"></i>
-                        </button>
-                        <button onclick="redirectToSocials('mailto:robindalmy@gmail.com')" class="social-button btn-primary">
-                            <i class="fa fa-envelope"></i>
-                        </button>
+                        <h5>Already sold? Contact me through these channels.</h5>
+                        <div>
+                            <button onclick="redirectToSocials('https://twitter.com/RobinDalmy')" class="social-button btn-primary">
+                                <i class="fa fa-twitter"></i>
+                            </button>
+                            <button style="margin-left: 20px;margin-right: 20px;" onclick="redirectToSocials('https://www.linkedin.com/in/robin-dalmy1997')" class="social-button btn-primary">
+                                <i class="fa fa-linkedin"></i>
+                            </button>
+                            <button onclick="redirectToSocials('mailto:robindalmy@gmail.com')" class="social-button btn-primary">
+                                <i class="fa fa-envelope"></i>
+                            </button>
+                        </div>
                     </div>
-                       
                     
                     <!-- <div class="call-to-action">
                         <p>I'm a Full Stack developer who loves learning and creating new things. I also like fixing things <3</p>
@@ -97,11 +101,11 @@
     </section>
 
     <!-- features section -->
-    <section class="pt-6 pb-7" id="features" data-background-color="white">
+    <section class="pt-6 pb-7" id="features">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 mx-auto text-center">
-                    <h2 style="color: #f50057;">Whoami?</h2>
+                    <h2 class="header-title">Whoami?</h2>
                 </div>
             </div>
             <div class="row">
@@ -158,7 +162,7 @@
 
             <div class="row">
                 <div class="col-md-6 mx-auto text-center">
-                    <h3 style="color: #f50057;">Skills</h3>
+                    <h3 class="header-title">Skills</h3>
                 </div>
             </div>
             <div class="row">
@@ -190,6 +194,9 @@
                     <div>
                         <h6 style="margin-bottom: 0;">Tools</h6>
                         <div>
+                            VS Code & Studio <br />
+                            XCode <br />
+                            Android Studio <br />
                             Git & Github <br />
                             SnailSvn & Svn <br />
                             Postman <br />
@@ -225,99 +232,37 @@
     </section>
 
     <!--pricing section-->
-    <section class="py-7 bg-dark section-angle top-right bottom-right" id="pricing">
+    <section class="pt-6 pb-7" id="pricing">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 mx-auto text-center">
-                    <h2 class="text-white heading-black">The Corpo Experience</h2>
-                    <p class="text-light lead">Simply pricing - 7 Days free trial</p>
+                    <h2 class="header-title">Work Experience</h2>
                 </div>
             </div>
             <!--pricing tables-->
-            <div class="row pt-5 pricing-table">
-                <div class="col-12 mx-auto">
-                    <div class="slick-about">
-                        <div class="card-deck pricing-table">
-                            <div class="card" atl="Work 1">
-                                <div class="card-body">
-                                    <h3 class="card-title pt-3">Personal</h3>
-                                    <h2 class="card-title text-primary mb-0 pt-4">$59</h2>
-                                    <div class="text-muted font-weight-medium mt-2">per month</div>
-                                    <ul class="list-unstyled pricing-list">
-                                        <li>1 user</li>
-                                        <li>10 websites</li>
-                                        <li>Access to premium templates</li>
-                                        <li>Basic support</li>
-                                    </ul>
-                                    <a href="#" class="btn btn-primary">
-                                        Start free trial
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="card" alt="Work 2">
-                                <div class="card-body">
-                                    <h3 class="card-title pt-3">Agency</h3>
-                                    <h2 class="card-title text-info mb-0 pt-4">$159</h2>
-                                    <div class="text-muted font-weight-medium mt-2">per month</div>
-                                    <ul class="list-unstyled pricing-list">
-                                        <li>2-15 users</li>
-                                        <li>50 websites</li>
-                                        <li>Access to premium templates</li>
-                                        <li>Priority support</li>
-                                    </ul>
-                                    <a href="#" class="btn btn-info">
-                                        Start free trial
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="card" alt="Work 3">
-                                <div class="card-body">
-                                    <h3 class="card-title pt-3">Enterprise</h3>
-                                    <h2 class="card-title text-primary mb-0 pt-4">$499</h2>
-                                    <div class="text-muted font-weight-medium mt-2">per month</div>
-                                    <ul class="list-unstyled pricing-list">
-                                        <li>Unlimited users</li>
-                                        <li>Unlimited websites</li>
-                                        <li>Access to premium templates</li>
-                                        <li>24/7 support</li>
-                                    </ul>
-                                    <a href="#" class="btn btn-primary">
-                                        Start free trial
-                                    </a>
-                                </div>
-                            </div>
+            <div class="row">
+                <div class="swiper-container">
+                    <div class="swiper-container-wrapper swiper-container-wrapper--timeline">
+                        <!-- Timeline -->
+                        <ul class="swiper-pagination-custom">
+                            <li class='swiper-pagination-switch first active'><span class='switch-title'>1911</span></li>
+                            <li class='swiper-pagination-switch'><span class='switch-title'>1970</span></li>
+                            <li class='swiper-pagination-switch'><span class='switch-title'>2021</span></li>
+                            <li class='swiper-pagination-switch last'><span class='switch-title'>3000</span></li>
+                        </ul>
+                        <!-- Progressbar -->
+                        <div class="swiper-pagination swiper-pagination-progressbar swiper-pagination-horizontal"></div>
+                        <!-- Swiper -->
+                        <div class="swiper swiper-container swiper-container--timeline">
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide"><span class="title">Swiper Timeline Progressbar</span></div>
+                            <div class="swiper-slide"><span class="title">Title 2</span></div>
+                            <div class="swiper-slide"><span class="title">Title 3</span></div>
+                            <div class="swiper-slide"><span class="title">Title 4</span></div>
+                        </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="row mt-6">
-                <div class="col-md-4 mr-auto">
-                    <h3>Everything is covered.</h3>
-                    <p class="lead">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in nisi commodo, tempus odio a,
-                        vestibulum nibh.
-                    </p>
-                </div>
-                <div class="col-md-7 offset-md-1">
-                    <ul class="features-list">
-                        <li>Weekly new templates</li>
-                        <li>Access to new features</li>
-                        <li>MailChimp integration</li>
-                        <li>Stripe integration</li>
-                        <li>100 refund guarantee</li>
-                        <li>Advance SEO tools</li>
-                        <li>Free unlimited support</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row mt-5">
-                <div class="col-md-8 col-12 divider top-divider mx-auto pt-5 text-center">
-                    <h3>Try Knight free for 7 days</h3>
-                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in nisi commodo,
-                        tempus odio a, vestibulum nibh.</p>
-                    <button class="btn btn-primary">
-                        Create your account
-                    </button>
                 </div>
             </div>
         </div>
@@ -540,12 +485,15 @@
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.7.3/feather.min.js"></script>
 <script src="https://kit.fontawesome.com/1e88450c01.js" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
 <script src="js/in-view.min.js"></script>
 <script src="js/scripts.js"></script>
+<script src="js/timeline.js"></script>
 </body>
 </html>

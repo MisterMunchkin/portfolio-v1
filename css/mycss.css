@@ -2,8 +2,20 @@ p {
   color: white;
 }
 
+.header-title {
+  color: #f50057;
+}
+
+.first-thing {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .technologies {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
 }
@@ -73,6 +85,15 @@ p {
   .contact-us-page {
     right: -1000px;
     width: 100vw;
+  }
+
+  .technologies {
+    padding-left: 12%;
+  }
+
+  .technologies > div{
+    width: 47%;
+    padding-bottom: 20px;
   }
 }
 
