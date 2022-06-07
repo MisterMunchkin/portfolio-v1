@@ -31,6 +31,15 @@ p {
   justify-content: space-around;
 }
 
+.technologies div h6 {
+  margin-bottom: 0;
+  color: #f50057
+}
+
+.technologies div div {
+  color: rgb(159, 159, 159);
+}
+
 .social-button {
   border-radius: 50%;
   height: 50px;
