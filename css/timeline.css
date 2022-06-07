@@ -29,6 +29,13 @@ li {
     padding-top: 10px;
 }
 
+.swiper-slide h6 .timeline-year {
+    color: rgb(159, 159, 159);
+    font-weight: lighter;
+    font-style: normal;
+    font-size: small;
+}
+
 .swiper-container-wrapper--timeline .swiper-slide .swiper-container {
     padding: 0;
     width: 100%;
