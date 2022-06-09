@@ -6,8 +6,48 @@ p {
   padding-top: 15%;
 }
 
+.built-by {
+  padding-top: 100px;
+}
+
 .header-title {
   color: #f50057;
+}
+
+.primary-color {
+  color: #f50057;
+}
+
+.pink-on-hover {
+  color: rgb(159, 159, 159);
+  -webkit-transition: color .25s cubic-bezier(0.4, 0, 1, 1); /* Safari */
+  transition: color .25s cubic-bezier(0.4, 0, 1, 1);
+  -webkit-transition-delay: .25s; /* Safari */
+  transition-delay: .25s;
+}
+
+.pink-on-hover:hover {
+  color: #f50057;
+}
+
+.get-in-touch {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.channels {
+  position: fixed;
+  right: 23px;
+  bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.channels a {
+  padding-top: 10px;
 }
 
 .first-thing {
@@ -114,6 +154,17 @@ p {
   .technologies > div{
     width: 47%;
     padding-bottom: 20px;
+  }
+
+  .channels {
+    padding-top: 20px;
+    position: inherit;
+    display: block;
+    height: auto;
+  }
+
+  .channels a {
+    padding-right: 10px;
   }
 }
 
