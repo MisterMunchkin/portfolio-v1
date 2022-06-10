@@ -80,20 +80,9 @@ p {
   color: rgb(159, 159, 159);
 }
 
-.social-button {
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-  vertical-align: middle;
-  -webkit-user-select: none;
-  border: 2px solid transparent;
-  cursor: pointer;
-}
-
-.social-button > i {
-  font-size: x-large; 
-  color: white;
-  vertical-align: middle;
+.contact-channels a:nth-child(2) {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .call-to-action {
@@ -165,6 +154,10 @@ p {
 
   .channels a {
     padding-right: 10px;
+  }
+
+  #hero-text {
+    padding-top: 0;
   }
 }
 

@@ -39,6 +39,7 @@
 .swiper-container-wrapper--timeline .swiper-slide .swiper-container {
     padding: 0;
     width: 100%;
+    height: 80vh;
 }
 .swiper-container-wrapper--timeline .swiper-slide .title {
     font-size: 18px;
@@ -141,4 +142,12 @@
 }
 .swiper-container-wrapper--timeline .swiper-pagination-custom .swiper-pagination-switch.active ~ .swiper-pagination-switch .switch-title:after {
     background: #f50057;
+}
+
+@media only screen and (max-width: 768px) {
+    .swiper-container-wrapper--timeline .swiper-slide .swiper-container {
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
 }
