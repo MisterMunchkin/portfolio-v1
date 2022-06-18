@@ -19,11 +19,13 @@ p {
 }
 
 .pink-on-hover {
-  color: rgb(159, 159, 159);
-  -webkit-transition: color .25s cubic-bezier(0.4, 0, 1, 1); /* Safari */
-  transition: color .25s cubic-bezier(0.4, 0, 1, 1);
-  -webkit-transition-delay: .25s; /* Safari */
-  transition-delay: .25s;
+  color: #9f9f9f;
+  -webkit-transition: color 0.25s cubic-bezier(0.4, 0, 1, 1);
+  /* Safari */
+  transition: color 0.25s cubic-bezier(0.4, 0, 1, 1);
+  -webkit-transition-delay: 0.25s;
+  /* Safari */
+  transition-delay: 0.25s;
 }
 
 .pink-on-hover:hover {
@@ -73,11 +75,11 @@ p {
 
 .technologies div h6 {
   margin-bottom: 0;
-  color: #f50057
+  color: #f50057;
 }
 
 .technologies div div {
-  color: rgb(159, 159, 159);
+  color: #9f9f9f;
 }
 
 .contact-channels a:nth-child(2) {
@@ -101,6 +103,7 @@ p {
   top: 0px;
   transition: all 0.4s ease-in-out;
 }
+
 .contact-us-page .content {
   margin-top: 50px;
 }
@@ -121,6 +124,7 @@ p {
   position: relative;
   overflow: hidden;
 }
+
 #home .video-bg {
   position: absolute;
   top: 0;
@@ -140,7 +144,7 @@ p {
     padding-left: 12%;
   }
 
-  .technologies > div{
+  .technologies > div {
     width: 47%;
     padding-bottom: 20px;
   }
@@ -160,5 +164,6 @@ p {
     padding-top: 0;
   }
 }
+/*# sourceMappingURL=mycss.css.map */
 
 /*# sourceMappingURL=mycss.css.map */
