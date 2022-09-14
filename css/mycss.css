@@ -2,6 +2,26 @@ p {
   color: white;
 }
 
+.gradient-anim-right {
+  display: inline-block;
+  background-position-x: 0px;
+  animation-duration: 3s;
+  animation-timing-function: cubic-bezier(0.48, 0.26, 0.49, 0.82);
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: bHafHd;
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-color: #a04298;
+  background-image: linear-gradient(90deg, #f50057 0%, #a04298 25%, #32517b 75%, #f50057 100%);
+  /* background-image: linear-gradient(90deg, rgb(162, 68, 255) 0%, rgb(52, 182, 255) 50%, rgb(162, 68, 255) 100%); */
+}
+
 #hero-text {
   padding-top: 15%;
 }
@@ -19,12 +39,10 @@ p {
 }
 
 .pink-on-hover {
-  color: #9f9f9f;
-  -webkit-transition: color 0.25s cubic-bezier(0.4, 0, 1, 1);
-  /* Safari */
+  color: rgb(159, 159, 159);
+  -webkit-transition: color 0.25s cubic-bezier(0.4, 0, 1, 1); /* Safari */
   transition: color 0.25s cubic-bezier(0.4, 0, 1, 1);
-  -webkit-transition-delay: 0.25s;
-  /* Safari */
+  -webkit-transition-delay: 0.25s; /* Safari */
   transition-delay: 0.25s;
 }
 
@@ -79,7 +97,7 @@ p {
 }
 
 .technologies div div {
-  color: #9f9f9f;
+  color: rgb(159, 159, 159);
 }
 
 .contact-channels a:nth-child(2) {
@@ -139,31 +157,34 @@ p {
     right: -1000px;
     width: 100vw;
   }
-
   .technologies {
     padding-left: 12%;
   }
-
   .technologies > div {
     width: 47%;
     padding-bottom: 20px;
   }
-
   .channels {
     padding-top: 20px;
     position: inherit;
     display: block;
     height: auto;
   }
-
   .channels a {
     padding-right: 10px;
   }
-
   #hero-text {
     padding-top: 0;
   }
 }
+@keyframes bHafHd {
+  from {
+    background-position-x: 0%;
+  }
+  to {
+    background-position-x: -200%;
+  }
+} /*!sc*/
 /*# sourceMappingURL=mycss.css.map */
 
 /*# sourceMappingURL=mycss.css.map */
