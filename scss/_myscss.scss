@@ -144,6 +144,10 @@ p {
 #home {
   position: relative;
   overflow: hidden;
+  background-image: url(../img/hero-landscape.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 #home .video-bg {
   position: absolute;
@@ -152,6 +156,13 @@ p {
   min-width: 100%;
   min-height: 100%;
   z-index: -1;
+}
+
+#contact {
+  background-image: url(../img/hero-landscape.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 @media only screen and (max-width: 768px) {
